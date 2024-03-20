@@ -61,16 +61,16 @@ int main(int argc, char* argv[]) {
 			printf("Ethernet header's src mac: ");
 			for(int i=0; i<6; i++)
 			{
-				if(i<5) printf("%02x:",eth_hdr->ether_shost[5-i]);
-				else printf("%02x\n",eth_hdr->ether_shost[5-i]);
+				if(i<5) printf("%02x:",eth_hdr->ether_shost[i]);
+				else printf("%02x\n",eth_hdr->ether_shost[i]);
 				
 			}
 
 			printf("Ethernet header's dst mac: ");
 			for(int i=0; i<6; i++)
 			{
-				if(i<5) printf("%02x:",eth_hdr->ether_dhost[5-i]);
-				else printf("%02x\n",eth_hdr->ether_dhost[5-i]);
+				if(i<5) printf("%02x:",eth_hdr->ether_dhost[i]);
+				else printf("%02x\n",eth_hdr->ether_dhost[i]);
 				
 			}
 			printf("\n");
